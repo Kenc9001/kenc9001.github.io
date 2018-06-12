@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
 <body>
+<style>
+body {margin:0;}
 
-<h2>What Can JavaScript Do?</h2>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-<p id="demo">JavaScript can change HTML content.</p>
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Chang</button>
-<button type="button" onclick='document.getElementById("demo").innerHTML = "JavaScript can change HTML content."'>Revert</button>
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
 
 </body>
 </html>
